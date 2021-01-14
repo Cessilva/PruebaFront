@@ -14,11 +14,8 @@
     color: #f1f1f1;
     width: 98%;
     height: 100%;
-    
-  }
-  .Container{
-    /*Direccion contenido*/
     display: flex;
+
   }
   
   /* Style the button used to pause/play the video */
@@ -39,11 +36,19 @@
 
   /*Carta de presentacion*/
   .Presentacion{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
     margin: auto;
+    padding-top: 20%;
     text-align: center;
+    position: absolute;
+    width: 536px;
+    height: 1159px;
+    left: 98px;
+    top: -96px;
+    background: linear-gradient(180deg, rgba(227, 203, 123, 0.58) 4.17%, rgba(227, 203, 123, 0) 100%);
+    filter: drop-shadow(1px 2px 15px rgba(0, 0, 0, 0.15));
+    border-radius: 55px;
   }
+ 
   
   .title {
     color: grey;
