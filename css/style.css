@@ -12,12 +12,15 @@
 /*Contenedor con fondo transparente gris */
 
 .content {
-    position: fixed;
+    position: absolute;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 98%;
     height: 100%;
     border-top: 0;
+}
+
+.container {
     /*Flexbox*/
     display: flex;
 }
@@ -32,6 +35,9 @@ a {
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 800px) {
+    .phone {
+        display: none;
+    }
     .Presentacion {
         text-align: center;
         width: 380px;
@@ -158,12 +164,147 @@ a {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    body {
+        box-sizing: content-box;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        box-sizing: content-box;
+    }
+    .phone {
+        display: block;
+        height: 150px;
+        width: 150px;
+        margin-bottom: 15%;
+    }
     .Presentacion {
         margin: auto;
         text-align: center;
         width: 100%;
+        box-sizing: content-box;
         background: linear-gradient(180deg, rgba(227, 203, 123, 0.58) 4.17%, rgba(227, 203, 123, 0) 100%);
         filter: drop-shadow(1px 2px 15px rgba(0, 0, 0, 0.15));
         border-radius: 55px;
+    }
+    .JuliaImg {
+        width: 100px;
+        height: 100px;
+    }
+    .JuliaRusuFont {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .LevelGold {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .idiomas {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .yellow {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #CBB66F;
+        margin: auto 0px;
+    }
+    .fechaHora {
+        margin: 20% auto;
+    }
+    .hora {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 36px;
+        /* or 75% */
+        text-align: center;
+        letter-spacing: 0.2em;
+        color: #FFFFFF;
+        display: block;
+    }
+    .dia {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 36px;
+        /* or 200% */
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+    /*Grid de botones */
+    .contenedorIconos {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorIconos img {
+        height: 100px;
+        width: 100px;
+    }
+    .iconos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    .iconos div {
+        background-image: url("circulo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 120px;
+        height: 120px;
+        margin: 10px 20px;
+        text-align: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #E3CB7B;
+        /*Centrar veticalmente*/
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+        border-radius: 50%;
+        border: solid rgb(223, 33, 33) 5px;
     }
 }
