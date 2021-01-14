@@ -22,6 +22,12 @@
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 
@@ -98,6 +104,31 @@
         letter-spacing: 0.1em;
         color: #FFFFFF;
     }
+    /*Grid de botones */
+    .iconos div {
+        background-image: url("circulo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #E3CB7B;
+    }
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+        border-radius: 50%;
+        border: solid rgb(223, 33, 33) 5px;
+    }
 }
 
 
@@ -112,46 +143,4 @@
         filter: drop-shadow(1px 2px 15px rgba(0, 0, 0, 0.15));
         border-radius: 55px;
     }
-}
-
-
-/* Style the button used to pause/play the video */
-
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
-
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-}
-
-button:hover,
-a:hover {
-    opacity: 0.7;
 }
